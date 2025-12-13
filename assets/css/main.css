@@ -3783,3 +3783,17 @@ input, select, textarea {
 			}
 
 		}
+
+		.video-container {
+			position: relative;
+			width: 100%;
+			max-width: 900px;
+			margin: 2em auto;
+		}
+		
+		.video-container video {
+			width: 100%;
+			height: auto;
+			border-radius: 8px;
+		}
+		
