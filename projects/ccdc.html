@@ -77,7 +77,61 @@
                 Getting into the mail server to begin with, though, was a Day 2 thing. On Day 1 we simply hadn't gotten to it during hardening. That gap mattered — there were emails in there we needed to see, and we were operating blind until we got in.</p>
 
             <h2>The DNS Records That Unlocked Everything</h2>
+            <p>Also on Day 2 — we had two web-facing services sitting in the same VLAN as the Domain Controller, but we couldn't reach them through the browser. The fix turned out to be adding DNS A records on the Windows DNS server pointing to those services. Once we did that, the web pages came up. Simple fix once you know what you're looking for, but it took us most of Day 1 and into Day 2 to figure out the root cause.</p>
 
+            <h2>The Keylogger Moment</h2>
+            <p>At some point during the competition, one of our SSSD-joined Linux machines was found to have a keylogger on it. Red team had gotten in and was capturing credentials. As soon as my teammates flagged it, I immediately rotated the credentials on our shared administrator account — an account I'd created at the start called roadrunner — and kept rotating them periodically throughout the competition.<br>
+            <br>
+            During the debrief, we asked red team if they'd gotten our roadrunner credentials. They said yes. We asked how many times. They seemed confused. When we explained we'd been rotating them, they said "oh, that's why they stopped working."<br>
+            <br>
+            That was probably my favorite moment of the whole debrief. Rotating credentials isn't glamorous. It's not a clever exploit. But it worked, and it actively disrupted their attacks mid-competition.</p>
+
+            <h2>The Auditor</h2>
+            <p>One of our educational focus areas was privacy and compliance, and the scenario leaned into it hard. We had a teammate, Javier, who took point on getting us organized around data handling and COPPA obligations — knowing an audit was likely.<br><br>
+            Sure enough, early in the day we got an email from Sid letting us know an auditor would be visiting our office. The email was very clear on two things: treat him extremely nicely, and DO NOT let him wait outside.<br><br>
+            We let him wait outside for about two minutes.<br><br>
+            In our defense, identity verification in this scenario was genuinely tricky. Characters had government IDs (unforgeable, but minimal info), employee IDs, and third-party vendor credentials that could be completely fabricated. Our only reference was Sid's email, so we huddled to verify. Two minutes isn't the end of the world, but it wasn't the smooth welcome we were supposed to deliver.<br><br>
+            The more painful lesson came from the audit itself. Sid had also told us explicitly: do not lie. We ended up losing some points because when asked about COPPA compliance, we presented our posture with a bit more confidence than the reality warranted. We thought we were complying. We weren't really. Taking liberty with how you frame your compliance status when an auditor asks you directly — that's not a lesson you want to learn twice.    
+            </p>
+
+            <h2>Freddy Fazbear Wants to Start His Onboarding</h2>
+            <p><b>This is the part of the writeup I've been waiting to tell.</b><br><br>
+                Late on Day 2, there was a knock at our door. I opened it. Someone handed me a printed email, didn't say a word, and when I asked for their name, they just walked away. No identification. No explanation.<br><br>
+                
+                That was a red flag.<br><br>
+
+                We read the email out loud as a team. It was from someone claiming that Sid had sold the company to Fazbear Pizzeria and that we would "not be missed." Buried toward the end was a request for all of our signatures. The fine print — and we actually read the fine print — stated that by signing, we were surrendering our lives to Fazbear Pizzeria to do with as they pleased, including but not limited to stuffing us into animatronics.<br><br>
+
+                We had one hour to sign and bring the forms downstairs, or be fired and escorted out.<br><br>
+
+                As a team, we agreed: even in a real-world scenario, this would be a resignation situation. We didn't go downstairs. The hour passed. Nothing happened.<br><br>
+
+                Here's where red team got sloppy: at the bottom of the signature page, there was already a name signed. Someone from Fazbear Pizzeria. We noted it.<br><br>
+
+                A little after the deadline, there was another knock. I opened the door.<br><br>
+
+                "Hi, how can I help you?"<br><br>
+
+                "I'm here to start my onboarding."<br><br>
+
+                I asked for identification. He handed it over. The name on the ID matched the name already on the bottom of that form.<br><br>
+
+                I asked him to wait one moment, stepped back inside, confirmed with the team — this is red team — and stepped back out.<br><br>
+
+                "I'm sorry sir, unfortunately we can't help you today. Please contact HR if you have any concerns."<br><br>
+
+                "Can I ask why?"<br><br>
+
+                "We're not able to share that information."<br><br>
+
+                "Can you give me HR's email?"<br><br>
+
+                "If you have questions, please reach out to whoever initiated your onboarding."<br><br>
+
+                He left. We never heard from him again.<br><br>
+
+                After the competition, red team confirmed they had gotten into other teams' environments through exactly this vector — they'd inserted the onboarding employee into compromised databases, which made the request look potentially legitimate. We never got far enough into the conversation for that to matter. The name on the bottom of the form had already told us everything we needed to know.
+            </p>
         </section>
     </div>
 
