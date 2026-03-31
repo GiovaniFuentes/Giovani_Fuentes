@@ -3804,4 +3804,167 @@ input, select, textarea {
 			display: block;
 		}
 		
+		/* Dark mode (default) */
+		body.dark-mode,
+		.dark-mode body {
+			background-color: #121212 !important;
+			background-image: none !important;
+			color: #e0e0e0;
+		}
+		.dark-mode #wrapper,
+		.dark-mode #main,
+		.dark-mode #header,
+		.dark-mode #footer,
+		.dark-mode section,
+		.dark-mode article,
+		.dark-mode .box,
+		.dark-mode .table-wrapper {
+			background-color: transparent;
+		}
+		.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6 {
+			color: #ffffff;
+		}
+		.dark-mode p, .dark-mode li, .dark-mode td, .dark-mode span, .dark-mode div {
+			color: #e0e0e0;
+		}
+		.dark-mode a {
+			color: #80d8ff;
+		}
+		.dark-mode a:hover {
+			color: #b3e5fc;
+		}
+		.dark-mode .button {
+			background-color: #00acc1;
+			color: #121212;
+		}
+		.dark-mode .button:hover {
+			background-color: #00838f;
+		}
+		.dark-mode .button.primary {
+			background-color: #00acc1;
+		}
+		.dark-mode .button.primary:hover {
+			background-color: #00838f;
+		}
+		.dark-mode .icon {
+			color: #80d8ff;
+		}
+		.dark-mode .icon solid {
+			color: #80d8ff;
+		}
+		.dark-mode .image.main img,
+		.dark-mode .image.fit img,
+		.dark-mode .image img {
+			border-radius: 4px;
+		}
+		.dark-mode .spotlight .image,
+		.dark-mode .spotlight .image img {
+			border-radius: 100% !important;
+		}
+		.dark-mode .spotlight .image {
+			border-color: rgba(255, 255, 255, 0.2);
+		}
+		.dark-mode #main .spotlight .image {
+			border-color: rgba(255, 255, 255, 0.2);
+		}
+		.dark-mode video {
+			border-radius: 4px;
+		}
+		.dark-mode .project-nav {
+			border-bottom-color: rgba(255, 255, 255, 0.1);
+		}
+		.dark-mode .project-nav a {
+			color: rgba(255, 255, 255, 0.5);
+		}
+		.dark-mode .project-nav a:hover,
+		.dark-mode .project-nav a.active {
+			color: #ffffff;
+		}
+		.dark-mode .project-nav a.active {
+			border-bottom-color: #80d8ff;
+		}
+		.dark-mode #nav {
+			background-color: #1e1e1e;
+			color: #e0e0e0;
+		}
+		.dark-mode #nav a {
+			color: rgba(255, 255, 255, 0.5);
+		}
+		.dark-mode #nav a:hover,
+		.dark-mode #nav a.active {
+			color: #ffffff;
+		}
+		.dark-mode #nav ul li a.active {
+			background-color: rgba(255, 255, 255, 0.1);
+			box-shadow: none;
+		}
+		.dark-mode #nav ul li a:hover {
+			background-color: rgba(255, 255, 255, 0.05);
+		}
+		.dark-mode #nav input, .dark-mode #nav select, .dark-mode #nav textarea,
+		.dark-mode #nav strong, .dark-mode #nav b,
+		.dark-mode #nav h1, .dark-mode #nav h2, .dark-mode #nav h3, .dark-mode #nav h4, .dark-mode #nav h5, .dark-mode #nav h6 {
+			color: #e0e0e0;
+		}
+		.dark-mode #nav code {
+			background: rgba(255, 255, 255, 0.1);
+			border-color: rgba(255, 255, 255, 0.2);
+		}
+		.dark-mode #nav hr {
+			border-bottom-color: rgba(255, 255, 255, 0.2);
+		}
+		.dark-mode #nav blockquote {
+			border-left-color: rgba(255, 255, 255, 0.2);
+		}
+		.dark-mode #nav.alt {
+			background-color: rgba(0, 0, 0, 0.95);
+		}
+		.dark-mode .alt {
+			background-color: rgba(255, 255, 255, 0.05);
+		}
+		.dark-mode table {
+			border-color: rgba(255, 255, 255, 0.1);
+		}
+		.dark-mode table th,
+		.dark-mode table td {
+			border-color: rgba(255, 255, 255, 0.1);
+		}
+		.dark-mode table thead {
+			border-bottom-color: rgba(255, 255, 255, 0.1);
+		}
+		.dark-mode table tfoot {
+			border-top-color: rgba(255, 255, 255, 0.1);
+		}
+		.dark-mode blockquote {
+			border-left-color: #80d8ff;
+			color: #e0e0e0;
+		}
+		.dark-mode pre {
+			background-color: rgba(0, 0, 0, 0.3);
+			color: #e0e0e0;
+		}
+		.dark-mode code {
+			color: #80d8ff;
+			background-color: rgba(0, 0, 0, 0.3);
+		}
+		/* Toggle button styling */
+		.theme-toggle {
+			background: transparent;
+			border: 2px solid rgba(255,255,255,0.3);
+			color: inherit;
+			padding: 0.5em 1em;
+			cursor: pointer;
+			border-radius: 4px;
+			font-size: 0.9em;
+			transition: all 0.3s;
+			margin-left: 1em;
+		}
+		.dark-mode .theme-toggle {
+			border-color: rgba(255,255,255,0.3);
+			color: #e0e0e0;
+		}
+		.theme-toggle:hover {
+			background: rgba(255,255,255,0.1);
+		}
+		
 		

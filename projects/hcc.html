@@ -4,8 +4,28 @@
     <title>Focus App Project</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    <style>
+        .project-nav {
+            display: flex;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 2em;
+        }
+        .project-nav a {
+            color: rgba(255, 255, 255, 0.5);
+            padding: 0.5em 1em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        .project-nav a:hover {
+            color: rgba(255, 255, 255, 0.8);
+        }
+        .project-nav a.active {
+            color: #fff;
+            border-bottom: 2px solid #9bf1ff;
+        }
+    </style>
 </head>
 <body class="is-preload">
 
@@ -15,15 +35,23 @@
     <header id="header">
         <h1>Focus App</h1>
         <p>A flexible productivity timer focused on simplicity, motivation, and stability.</p>
-        <p><a href="index.html" class="button small">← Back to Home</a></p>
+        <p><a href="../index.html" class="button small">← Back to Home</a> <a href="../projects.html" class="button small">Back to Projects</a></p>
+        <button class="theme-toggle">Dark Mode</button>
     </header>
+
+    <!-- Project Navigation -->
+    <div class="project-nav">
+        <a href="hcc.html" class="active">HCC Project</a>
+        <a href="senior.html">Senior Project</a>
+        <a href="ccdc.html">CCDC Writeup</a>
+    </div>
 
     <!-- Main -->
     <div id="main">
         <section id="content" class="main">
 
             <span class="image main">
-                <img src="images/ngo-ngoc-khai-huyen-HfAhcNTUsqw-unsplash.jpg" alt="Focus App Screenshot" />
+                <img src="../images/ngo-ngoc-khai-huyen-HfAhcNTUsqw-unsplash.jpg" alt="Focus App Screenshot" />
             </span>
 
             <!-- Overview -->
@@ -47,7 +75,7 @@
             <h2>Prototype Walkthrough</h2>
             <div class="video-container">
                 <video controls preload="metadata">
-                    <source src="videos/ChargePomodoro.mp4" type="video/mp4">
+                    <source src="../videos/ChargePomodoro.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -77,9 +105,9 @@
             <h3>Initial Concept</h3>
             <div class="box alt">
                 <div class="row gtr-uniform">
-                    <div class="col-4"><span class="image fit"><img src="images/InitialProto/20251026_232549.jpg" alt="" /></span></div>
-                    <div class="col-4"><span class="image fit"><img src="images/InitialProto/20251026_232556.jpg" alt="" /></span></div>
-                    <div class="col-4"><span class="image fit"><img src="images/InitialProto/20251026_232605.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/InitialProto/20251026_232549.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/InitialProto/20251026_232556.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/InitialProto/20251026_232605.jpg" alt="" /></span></div>
                 </div>
             </div>
 
@@ -93,9 +121,9 @@
             <h4>Prototype 1 — Radial Timer</h4>
             <div class="box alt">
                 <div class="row gtr-uniform">
-                    <div class="col-4"><span class="image fit"><img src="images/ProtoOne/Proto1.1.jpg" alt="" /></span></div>
-                    <div class="col-4"><span class="image fit"><img src="images/ProtoOne/Proto1.2.jpg" alt="" /></span></div>
-                    <div class="col-4"><span class="image fit"><img src="images/ProtoOne/Proto1.3.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/ProtoOne/Proto1.1.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/ProtoOne/Proto1.2.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/ProtoOne/Proto1.3.jpg" alt="" /></span></div>
                 </div>
             </div>
             <p>
@@ -106,10 +134,10 @@
             <h4>Prototype 2 — Expanded Controls</h4>
             <div class="box alt">
                 <div class="row gtr-uniform">
-                    <div class="col-4"><span class="image fit"><img src="images/ProtoTwo/Proto2.1.jpg" alt="" /></span></div>
-                    <div class="col-4"><span class="image fit"><img src="images/ProtoTwo/Proto2.2.jpg" alt="" /></span></div>
-                    <div class="col-4"><span class="image fit"><img src="images/ProtoTwo/Proto2.3.jpg" alt="" /></span></div>
-                    <div class="col-4"><span class="image fit"><img src="images/ProtoTwo/Proto2.4.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/ProtoTwo/Proto2.1.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/ProtoTwo/Proto2.2.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/ProtoTwo/Proto2.3.jpg" alt="" /></span></div>
+                    <div class="col-4"><span class="image fit"><img src="../images/ProtoTwo/Proto2.4.jpg" alt="" /></span></div>
                 </div>
             </div>
             <p>
@@ -169,7 +197,8 @@
     <footer id="footer">
         <section>
             <ul class="actions">
-                <li><a href="index.html" class="button">Back to Home</a></li>
+                <li><a href="../index.html" class="button">Back to Home</a></li>
+                <li><a href="../projects.html" class="button">Back to Projects</a></li>
             </ul>
         </section>
 
@@ -193,13 +222,14 @@
 </div>
 
 <!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/jquery.scrolly.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
+<script src="../assets/js/jquery.min.js"></script>
+<script src="../assets/js/jquery.scrollex.min.js"></script>
+<script src="../assets/js/jquery.scrolly.min.js"></script>
+<script src="../assets/js/browser.min.js"></script>
+<script src="../assets/js/breakpoints.min.js"></script>
+<script src="../assets/js/util.js"></script>
+<script src="../assets/js/main.js"></script>
+<script src="../assets/js/darkmode.js"></script>
 
 </body>
 </html>
