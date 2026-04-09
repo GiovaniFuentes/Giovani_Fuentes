@@ -95,7 +95,8 @@
             </p>
 
             <h2>Freddy Fazbear Wants to Start His Onboarding</h2>
-            <p><b>This is the part of the writeup I've been waiting to tell.</b><br><br>
+            <img src="../images/CCDCIMG/FreddyFaz.gif" alt="Fazbear gif" />
+            <p><strong>This is the part of the writeup I've been waiting to tell.</strong><br><br>
                 Late on Day 2, there was a knock at our door. I opened it. Someone handed me a printed email, didn't say a word, and when I asked for their name, they just walked away. No identification. No explanation.<br><br>
                 
                 That was a red flag.<br><br>
@@ -132,6 +133,46 @@
 
                 After the competition, red team confirmed they had gotten into other teams' environments through exactly this vector — they'd inserted the onboarding employee into compromised databases, which made the request look potentially legitimate. We never got far enough into the conversation for that to matter. The name on the bottom of the form had already told us everything we needed to know.
             </p>
+
+            <h2>The CEO Situation (...Or more like we thought too hard about this...)</h2>
+
+            <p>
+                At one point we received an email by hand(we hadn't been able to get into our email service yet so they were giving us written emails we didn't fall behind too far) by a member form orange team. This was the email from Sid about the auditor. After giving us the email he let use know that Sid's account appeared to be locked out. He told us to reach out to Sid, but we weren't sure if Sid himself was behind the message or if red team had taken over. Orange team injects required us to respond, and we lost points for not engaging.<br><br>
+
+                We did not want to accidentally hand information to red team through a compromised account. So we devised a verification plan.<br><br>
+
+                In the auditor email, Sid had included a very specific postscript: "If you say 'we should have thought about this earlier,' I will fire you too."<br><br>
+
+                Our plan: respond to Sid, discuss the auditor prep, and end the email with exactly that phrase. If Sid himself was behind the account, he'd come down to our office to yell at us — and we'd have live confirmation he wasn't compromised. We were prepared to take the firing.<br><br>
+
+                Sid never came. He also wasn't compromised. We had simply overthought it.<br><br>
+
+                To be fair, it was still a funny idea, just not what was planned for the scenario.
+            </p>
+
+            <h2>What I'd Do Differently</h2>
+            <ul>
+                <li><strong>Check concurrent sessions on the Domain Controller regularly.</strong> Red team was in there and I never saw them.</li>
+                <li><strong>Disable WinRM and Remote Registry early.</strong> After talking with Red team during the debrief these were some easy wins that I just seemed to have missed.</li>
+                <li><strong>Stick to the script discipline all the way through.</strong> I built the rollback system for a reason. Use it the whole time!</li>
+                <li><strong>Focus heavily on getting into the mail server on Day 1.</strong> The competition holders strongly emphasized how important email communication is in a work environment. I have seen it in my own IT job as well! Don't leave communication infrastructure unchecked for an entire day. It's essential for a company to run!</li>
+                <li><strong>Focus on the Business side of IT too!</strong> During the audit we overstated our compliance posture because we didn't focus on it enought. Security isn't just about not letting Red team in, it's also making sure you follow the law and company policy.                
+            </ul>
+
+            <h2>Final Thoughts</h2>
+            <p>
+                Three years of qualifiers. One regional. <b>SO WORTH IT!!!</b><br><br>
+
+                CCDC has given me something no class can - the experience of working in a live environment under pressure, one a real team, with services that actually break and attackers that actually adapt. I made mistakes. Red team found their way into my DC. We let the auditor wait outside. We almost joined the union against the company.<br><br>
+
+                But we also rotated credentials fast enough to kick red team out. We caught a social engineering attempt by reading the fine print on a fake legal document. We kept our door controlled for the entire competition.<br><br>
+
+                I don't believe that I will be able to compete again next year due to looking for fulltime work, but if I had...<br><br>
+
+                I would disable WinRM and Remote Registry as on of the first things.
+            </p>
+
+            
         </section>
     </div>
 
