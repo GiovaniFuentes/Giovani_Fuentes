@@ -39,7 +39,7 @@
             // Update button text based on current theme
             const updateText = () => {
                 const isDark = document.body.classList.contains(DARK_CLASS);
-                btn.textContent = isDark ? '☀️ Light Mode' : '🌙 Dark Mode';
+                btn.textContent = isDark ? 'Light Mode' : 'Dark Mode';
                 btn.title = isDark ? 'Switch to light mode' : 'Switch to dark mode';
             };
             updateText();
